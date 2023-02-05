@@ -9,7 +9,7 @@
       <div class="card-body flex-wrap">
         <h5 class="card-title">{{ post.title }}</h5>
         <p class="card-text">{{ post.description|truncatewords:20 }}</p>
-        <a class="btn text-primary px-0" href="#">Подробнее...</a>
+        <a class="btn text-primary px-0" href="{% url 'detail' post.slug %}">Подробнее...</a>
       </div>
       <div class="card-footer">
         <small class="text-muted">{{ post.created_at }}</small>

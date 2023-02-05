@@ -1,0 +1,15 @@
+{% extends 'toDo/base.html' %}
+
+{% block content %}
+<div class="card my-3">
+    <div class="card-body">
+        <h5 class="card-title py-2">{{ post.title }}</h5>
+        <hr>
+        <p class="card-text">{{ post.description }}</p>
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">time create: {{ post.created_at }}</small>
+    </div>
+</div>
+
+{% endblock %}
